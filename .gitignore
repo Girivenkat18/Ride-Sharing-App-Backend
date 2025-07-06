@@ -1,0 +1,36 @@
+# === Java / Spring Boot ===
+target/
+*.class
+*.jar
+*.war
+*.log
+
+# === IntelliJ IDEA ===
+.idea/
+*.iml
+out/
+
+# === VS Code ===
+.vscode/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Sensitive Configuration Files ===
+.env
+application-dev.properties
+application-dev.yml
+application-prod.properties
+application-prod.yml
+
+#------
+application.properties
+#------
+
+# === Maven Wrapper ===
+.mvn/wrapper/maven-wrapper.jar
+
+# === Gradle Wrapper ===
+.gradle/
+build/

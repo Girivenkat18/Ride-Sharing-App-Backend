@@ -1,8 +1,6 @@
 package com.giri.Ride.Sharing.App.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-
-
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -18,17 +16,17 @@ public class MyUserDetailsService implements UserDetailsService {
     @Autowired
     private UserRepo repo;
 
-
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 
-        User user= repo.findByUsername(username);
+        User user = repo.findByEmail(email); // updated to use email
 
-        if (user==null) {
-            System.out.println("User 404");
-            throw new UsernameNotFoundException("User 404");
+        if (user == null) {
+            System.out.println("User not found with email: " + email);
+            throw new UsernameNotFoundException("User not found with email: " + email);
         }
+
         return new UserPrincipal(user);
     }
-
 }
+

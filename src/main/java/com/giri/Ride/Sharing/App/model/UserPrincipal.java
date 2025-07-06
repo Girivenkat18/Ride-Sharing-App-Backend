@@ -9,9 +9,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public class UserPrincipal implements UserDetails{
 
-    /**
-     *
-     */
     private static final long serialVersionUID = 1L;
 
 
@@ -23,20 +20,18 @@ public class UserPrincipal implements UserDetails{
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-
-        return Collections.singleton(new SimpleGrantedAuthority("USER"));
+//        return Collections.singleton(new SimpleGrantedAuthority("USER"));
+        return null;
     }
 
     @Override
     public String getPassword() {
-
         return user.getPassword();
     }
 
     @Override
     public String getUsername() {
-
-        return user.getUsername();
+        return user.getEmail();
     }
 
     @Override
