@@ -1,10 +1,10 @@
-# 🚗 Ride-Sharing App — Backend
+# Ride-Sharing App — Backend
 
 Backend service for a ride-sharing platform built to connect users who want to share rides with others traveling to the same destination. The project aims to promote more efficient and sustainable travel by enabling ride coordination through a secure and scalable system. Developed using Spring Boot and PostgreSQL, the backend provides RESTful APIs for user authentication, ride posting, ride requests, and ride history tracking. JWT is used for authentication, and the codebase follows a clean layered architecture with separation of concerns across controller, service, and repository layers. Designed to integrate seamlessly with the mobile frontend.
 
 ---
 
-## 🔧 Tech Stack
+## Tech Stack
 
 - Java 23
 - Spring Boot
@@ -15,7 +15,7 @@ Backend service for a ride-sharing platform built to connect users who want to s
 
 ---
 
-## 📦 Features
+## Features
 
 - JWT-based user authentication
 - Create and manage ride posts
@@ -27,7 +27,7 @@ Backend service for a ride-sharing platform built to connect users who want to s
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
